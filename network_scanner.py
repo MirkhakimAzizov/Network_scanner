@@ -9,7 +9,6 @@ def input_ip():
     if not options.ip:
         parser.error("[-] Please specify an IP address, use --help for more info")
     return options
-    print(options.ip)
 def scan(ip):
     # scapy.arping(ip)
     arp_request = scapy.ARP(pdst=ip)
